@@ -51,6 +51,7 @@ fs.readFile('./dayFive.txt', (err, data) => {
 
     let seatId = rowOutput * 8 + seatOutput;
     if (seatId > maxSeatId) maxSeatId = seatId;
+    // need below array for part 2
     return seatIds.push(seatId);
     // console.log(
     //   'row',
@@ -64,22 +65,6 @@ fs.readFile('./dayFive.txt', (err, data) => {
   console.log('highest seat ID', maxSeatId);
 
   // --- Part Two ---
-
-  //need tp push all seat row into array
-  //need to find number of seats for count
-  // Each row has 8 seats
-  // let checkRow = 127;
-  // let checkSeat = 7;
-  // let missing = [];
-  // let rowArr = [0, 5];
-  // let seatArr = [0, 7];
-  // for (let i = 0; i <= checkRow[checkRow.length - 1]; i++) {
-  //   if (rowArr.indexOf(i) == -1) {
-  //     missing.push(i);
-  //   }
-  // }
-  // console.log(missing);
-
   const findMissing = num => {
     const maxNum = Math.max(...num); // Will find highest number
     const minNum = Math.min(...num); // Will find lowest number
