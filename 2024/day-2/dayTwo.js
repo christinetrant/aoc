@@ -1,4 +1,4 @@
-const data = require('../day-one/input.js');
+const data = require('../day-1/input.js');
 
 const input = data.input
 
